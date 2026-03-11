@@ -11,12 +11,13 @@ module "mod_alerting" {
   #version = "x.x.x"
   source = "../.."
 
-  existing_resource_group_name = azurerm_resource_group.rg.name
-  location                     = azurerm_resource_group.rg.location
-  org_name                     = var.org_name
-  environment                  = var.environment
-  deploy_environment           = var.deploy_environment
-  workload_name                = var.workload_name
+  existing_resource_group_name   = azurerm_resource_group.rg.name
+  monitoring_resource_group_name = azurerm_resource_group.rg.name
+  location                       = azurerm_resource_group.rg.location
+  org_name                       = var.org_name
+  environment                    = var.environment
+  deploy_environment             = var.deploy_environment
+  workload_name                  = var.workload_name
 
   action_group_short_name = "Alerting"
 

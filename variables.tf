@@ -171,3 +171,8 @@ variable "metric_alerts" {
 
   default = {}
 }
+variable "custom_resource_group_name" {
+  description = "Custom name for the resource group. If not provided, the name will be generated."
+  type        = string
+  default     = null
+}

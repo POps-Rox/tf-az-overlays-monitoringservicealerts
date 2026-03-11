@@ -35,7 +35,7 @@ More details are available in the [CONTRIBUTING.md](./CONTRIBUTING.md#pull-reque
 ```hcl
 
 module "mod_service_alerts" {
-  source = "azurenoops/overlays-service-alerts/azurerm"
+  source = "POps-Rox/tf-az-overlays-service-alerts/azurerm"
   version = "0.1.0"
 
   # Resource Group
